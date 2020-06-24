@@ -306,6 +306,7 @@ section.servicios .servicios-tab .items-tab {
   border-radius: 24px;
   opacity: 1;
   background: white;
+  min-width: 116px;
 }
 section.servicios .servicios-tab .items-tab img {
   width: 50%;
