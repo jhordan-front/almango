@@ -1,0 +1,15 @@
+<svg id="ELEMENTS" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1365" viewBox="0 0 1920 1365">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="0.168" stop-color="#050505"/>
+      <stop offset="0.363" stop-color="#131313"/>
+      <stop offset="0.435" stop-color="#1a1a1a"/>
+      <stop offset="1" stop-color="#333"/>
+    </radialGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_990" data-name="Rectángulo 990" width="1920" height="1365"/>
+    </clipPath>
+  </defs>
+  <path id="Trazado_1830" data-name="Trazado 1830" d="M1045.622,0l-85.77,682.353L874.083,0Zm0,1364.705-85.77-682.353-85.77,682.353ZM510.093,0l449.76,682.353L704.532,0Zm899.519,1364.705L959.853,682.353l255.321,682.353ZM0,0V2.486L959.853,682.353,290.355,0ZM1919.705,1364.705v-2.486L959.853,682.353l669.5,682.353ZM0,365.692l959.853,316.66L0,202.707ZM1919.705,999.013,959.853,682.353,1919.705,1162ZM0,623.914l959.853,58.439L0,498.166ZM1919.705,740.791,959.853,682.353l959.853,184.186ZM0,866.539,959.853,682.353,0,740.791ZM1919.705,498.166,959.853,682.353l959.853-58.439ZM0,1162,959.853,682.353,0,999.013Zm1919.705-959.29L959.853,682.353l959.853-316.66ZM0,1364.705H290.355l669.5-682.353L0,1362.219ZM1919.705,0H1629.35l-669.5,682.353L1919.705,2.486ZM704.532,1364.705,959.853,682.353l-449.76,682.353ZM1215.173,0,959.853,682.353,1409.612,0Z" transform="translate(0.295 0.295)" fill="url(#radial-gradient)"/>
+</svg>

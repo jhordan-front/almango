@@ -57,6 +57,7 @@ h3 strong {
 img {
   width: 100%;
   display: block;
+  position: relative;
 }
 
 .back-image {
@@ -129,8 +130,13 @@ section.nosotros .contenedor {
   flex-wrap: wrap;
 }
 section.nosotros .contenedor .col.izq {
-  width: 50%;
-  float: left;
+      width: 50%;
+    float: left;
+    padding-right: 40px;
+    overflow: hidden;
+}
+section.nosotros .contenedor .col.izq .image-efecto {
+  position: relative;
 }
 section.nosotros .contenedor .col.izq .image-efecto img.captura-ipad {
   width: 85%;
@@ -139,6 +145,27 @@ section.nosotros .contenedor .col.izq .image-efecto img.captura-ipad {
 section.nosotros .contenedor .col.izq .image-efecto img.screen-shot {
   position: absolute;
   z-index: 10;
+  position: absolute;
+  z-index: 10;
+  width: 194%;
+  left: -50%;
+  top: 43px;
+}
+section.nosotros .contenedor .col.izq .image-efecto .animacion-moto {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 264px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+section.nosotros .contenedor .col.izq .image-efecto .animacion-moto img.moto-izquierda {
+    bottom: 39px;
+    left: -100%;
+    z-index: 200;
+    transform: translateX(100%);
+    transition-delay: 2s;
+    transition-duration: 4s;
 }
 section.nosotros .contenedor .col.der {
   float: right;
@@ -154,15 +181,84 @@ section.nosotros .contenedor .col.der p {
   text-align: right;
   line-height: 29px;
 }
-
+section.vendedor{
+    background: black;
+    background-image: url(../img/fondos/Fondo3.svg);
+    background-size: cover;
+}
 section.vendedor h3 {
   text-transform: uppercase;
   text-align: center;
   width: 100%;
+
+}
+section.vendedor .contenedor {
+  position: relative;
+  height: 130vh;
+}
+section.vendedor .imagen-efect-2 {
+    position: absolute;
+    top: 59px;
+    z-index: 200;
+    width: 71%;
+    margin-left: 15%;
+}
+section.vendedor .imagen-efect-1 {
+    position: absolute;
+    top: 0;
+    z-index: 300;
+}
+.imagen-efect-3 {
+    position: absolute;
+    z-index: 600;
+    overflow: hidden;
+    width: 50%;
+    left: 0;
+    top: 140px;
+}
+.imagen-efect-3 img{
+    right: -100%;
+    z-index: 600;
+    transform: translateX(-100%);
+    transition-delay: 4s;
+    transition-duration: 4s;
 }
 
+.imagen-efect-4 {
+    position: absolute;
+    overflow: hidden;
+    z-index: 700;
+    width: 1%;
+    top: 40%;
+    left: 49%;
+    transform: scale(50);
+    transition-delay: 1.0s;
+    transition-duration: 4s;
+}
+.imagen-efect-4 img{
+    transform: scale(1);
+    
+}
+.imagen-efect-5 {
+  overflow: hidden;
+  position: absolute;
+  z-index: 600;
+  width: 50%;
+  right: 0;
+  top: 140px;
+
+}
+.imagen-efect-5 img {
+    left: -100%;
+    z-index: 600;
+    transform: translateX(100%);
+    transition-delay: 2s;
+    transition-duration: 4s;
+}
 section.beneficios h2 {
-  text-align: center;
+    text-align: center;
+    padding: 50px 0;
+    padding-bottom: 0;
 }
 section.beneficios .contenedor .col.mid {
   margin: 0 auto;
@@ -182,16 +278,21 @@ section.beneficios .contenedor .col.mid p {
   color: black;
   text-align: right;
 }
-
 section.servicios {
-  padding: 0 50px;
-  width: 100%;
-  height: auto;
-  padding-bottom: 100px;
-  position: relative;
+    padding: 0 50px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    position: relative;
+    background-color: black;
+    background-image: url(../img/fondos/Fondo2.svg);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    padding-bottom: 0;
 }
 section.servicios .servicios-tab {
-  width: 100%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-gap: 10px;
@@ -283,15 +384,18 @@ section.servicios .contenedor.suscripcion .laptop-img {
   position: relative;
 }
 section.servicios .contenedor.suscripcion .laptop-img img.screenshot-moto {
-  position: absolute;
-  width: 70%;
-  top: 60px;
-  z-index: -10;
-  left: 16%;
+    position: absolute;
+    width: 70%;
+    top: 60px;
+    z-index: 10;
+    left: 16%;
 }
 
 section.banner-publicidad {
   background: black;
+  background-image: url(../img/fondos/Fondo1.svg);
+  background-size: cover;
+  padding-top: 30px;
 }
 section.banner-publicidad .contenedor h3 {
   -webkit-text-stroke: 1px white;
@@ -612,9 +716,6 @@ section.tarifas .banner-publicitarios-tabs .subitems-banner p span {
   position: absolute;
   top: 0;
   left: -20px;
-}
-section.tarifas .banner-publicitarios {
-  height: 100vh;
 }
 section.tarifas .banner-publicitarios .tabs-precios {
   display: grid;

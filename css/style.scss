@@ -55,6 +55,7 @@ h3{
 img{
 	width: 100%;
 	display: block;
+	position: relative;
 }
 .back-image{
 	position: absolute;
@@ -124,6 +125,7 @@ section.nosotros{
 			width: 50%;
 			float: left;
 			.image-efecto{
+				position: relative;
 				img.captura-ipad{
 					width: 85%;
 					z-index: 150;
