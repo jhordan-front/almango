@@ -349,6 +349,7 @@ section.servicios .contenedor.suscripcion h3 {
   color: white;
   text-align: center;
   width: 100%;
+  text-transform: uppercase;
 }
 section.servicios .contenedor.suscripcion .tipos-suscripcion {
   width: 50%;
@@ -798,4 +799,234 @@ footer .contenedor .rrss-footer {
 footer .contenedor .rrss-footer img {
   width: 45px;
   margin: 10px;
+}
+@media screen and (min-width: 300px) and (max-width: 600px){
+    html,body{
+        overflow-x: hidden;
+    }
+    h1 strong {
+    color: #FFA020;
+    font-size: 50px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    header{
+        padding: 0;
+    }
+    header .logo-header {
+    width: 100%;
+    }
+    header .logo-header img {
+    margin: 0 auto;
+    }
+    section.almango h1 {
+    font-size: 35px;
+    padding-top: 150px;
+    }
+    header nav {
+    display: none;
+    }
+    section.nosotros .contenedor .col.izq {
+    width: 100%;
+    padding: 0 20px;
+    }
+    section.nosotros .contenedor .col.izq .image-efecto {
+    overflow: hidden;
+    }
+    section.nosotros .contenedor .col.izq .image-efecto img.screen-shot {
+    z-index: 10;
+    top: 24px;
+    }
+    section.nosotros .contenedor .col.izq .image-efecto .animacion-moto {
+        width: 85%;
+        top: 180px;
+        margin-left: 19px;
+    }
+    section.nosotros .contenedor .col.der {
+        width: 100%;
+        justify-content: center;
+        padding: 0 20px;
+
+    }
+    section.nosotros .contenedor .col.der p {
+        text-align: center;
+        font-size: 15px;
+    }
+    section.vendedor {
+    padding: 0 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+    section.vendedor .imagen-efect-1 {
+    top: 40px;
+    }
+    .imagen-efect-3 {
+    top: 80px;
+    }
+    .imagen-efect-5 {
+    top: 80px;
+    }
+    .imagen-efect-4 {
+    top: 50%;
+    }
+    section.vendedor .contenedor {
+    position: relative;
+    height: 45vh;
+    }
+    section.beneficios .contenedor .col.mid img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    }
+    section.beneficios .contenedor .col.mid p {
+    width: 80%;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    }
+    section.beneficios {
+    height: 100vh;
+    }
+    section.servicios .servicios-tab {
+    display: none;
+    }
+    section.servicios .contenedor {
+    padding-top: 30px;
+    }
+    section.servicios {
+    padding: 0 20px;
+    }
+    section.servicios .contenedor .col.izq {
+    width: 100%;
+    }
+    section.servicios .contenedor .col.izq h2 {
+    margin-bottom: 20px;
+    }
+    section.servicios .contenedor .col.izq p {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    }
+    section.servicios .contenedor .col.der {
+    width: 100%;
+    }
+    section.servicios .contenedor .col.der img {
+    width: 70%;
+    float: unset;
+    margin: 0 auto;
+    }
+    section.servicios .contenedor.suscripcion .tipos-suscripcion {
+    width: 100%;
+    }
+    section.servicios .contenedor.suscripcion .tipos-suscripcion .subtipos {
+    height: 90px;
+    width: 90px;
+    }
+    section.servicios .contenedor.suscripcion .tipos-suscripcion .subtipos p {
+    font-size: 20px;
+    }
+    section.servicios .contenedor.suscripcion .laptop-img img.screenshot-moto {
+    top: 20px;
+    }
+    section.banner-publicidad .contenedor .texto-banner {
+    width: 100%;
+    padding: 0 20px;
+    }
+    section.banner-publicidad .contenedor .tipos-suscripcion {
+    width: 100%;
+    justify-content: space-evenly;
+    }
+    section.banner-publicidad .contenedor .tipos-suscripcion .subtipos {
+    width: 75px;
+    height: 75px;
+    }
+    section.banner-publicidad .contenedor .tipos-suscripcion .subtipos p {
+    font-size: 15px;
+    }
+    section.banner-publicidad .contenedor .laptop-movil {
+    padding: 0 20px;
+    }
+    section.servicios-complementarios h3 {
+    width: 100%;
+    font-size: 30px;
+    padding-top: 20px;
+    }
+    section.servicios-complementarios .items-servicios {
+    display: none;
+    }
+    .estadistica {
+    padding: 0 20px;
+    }
+    section.servicios-complementarios .estadistica .contenedor {
+    flex-wrap: wrap;
+    }
+    section.servicios-complementarios .estadistica .contenedor .col.izq {
+    width: 100%;
+    }
+    section.servicios-complementarios .estadistica .contenedor .col.izq p {
+    text-align: center;
+    }
+    section.servicios-complementarios .estadistica .contenedor .col.der {
+    margin: auto;
+    margin-top: 30px;
+    }
+    section.tarifas .tarifas-contenido {
+    width: 100%;
+    justify-content: space-evenly;
+    }
+    section.tarifas .tarifas-contenido .dedos-items {
+    width: 70px;
+    height: 70px;
+    }
+    section.tarifas .tipos-tarifas {
+    flex-wrap: wrap;
+    }
+    section.tarifas .tipos-tarifas .subtipos {
+    width: auto;
+    margin-bottom: 20px;
+    }
+    .condiciones {
+    padding: 0 20px;
+    }
+    section.tarifas .banner-publicitarios .tarifas-contenido .dedos-items {
+    width: 70px;
+    height: 70px;
+    }
+    section.tarifas .banner-publicitarios-tabs {
+    flex-wrap: wrap;
+    }
+    section.tarifas .banner-publicitarios-tabs .subitems-banner {
+    margin-bottom: 20px;
+    }
+    section.tarifas .banner-publicitarios .tabs-precios {
+    display: none;
+    }
+    footer {
+    padding: 60px 20px;
+    }
+    footer .contenedor .col.der {
+    padding: 0;
+    }
+    footer .contenedor .contacto-footer {
+    flex-direction: column;
+    margin-top: 20px;
+    }
+    footer .contenedor .contacto-footer p {
+    margin-top: 20px;
+    text-align: center;
+    }
+    footer .contenedor .rrss-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    section{
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+
 }
