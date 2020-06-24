@@ -1,0 +1,728 @@
+@font-face { font-family:'BwGlennSansDEMO-Black'; 
+	src: local('../fonts/BwGlennSansDEMO-Black'), 
+	url('../fonts/BwGlennSansDEMO-Black.woff'),
+	url('../fonts/BwGlennSansDEMO-Black.ttf'), 
+	url('../fonts/BwGlennSansDEMO-Black.eot'),
+	url('../fonts/BwGlennSansDEMO-Black.otf') ; } 
+@font-face { font-family: BwGlennSansDEMO-Bold; 
+	src: local('../fontsBwGlennSansDEMO-Bold'), 
+	url('../fontsBwGlennSansDEMO-Bold.woff'),
+	url('../fontsBwGlennSansDEMO-Bold.ttf'), 
+	url('../fontsBwGlennSansDEMO-Bold.eot'),
+	url('../fontsBwGlennSansDEMO-Bold.otf') ; } 
+/*GENERALES*/
+a{
+	color: unset;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+    text-decoration: none;
+}
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+h1{
+	font-size: 80px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	strong{
+		color: #FFA020;
+		font-size: 100px;
+		font-weight: 800;
+		font-family: 'Heebo', sans-serif;
+	}
+}
+h2{
+	font-family:'BwGlennSansDEMO-Black';
+	font-size: 30px;
+	font-weight: 900;
+	width: 100%;
+	text-align: center;
+
+}
+h3{
+	font-size: 50px;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 800;
+	strong{
+		color: #FFA020;
+	}
+}
+img{
+	width: 100%;
+	display: block;
+}
+.back-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+header {
+	width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: absolute;
+    align-items: center;
+    padding: 0 100px;
+	.logo-header {
+	    max-height: 100%;
+	    overflow: hidden;
+	    width: 50%;
+	    img{
+	    	height: 100px;
+	    	width: auto;
+	    }
+	}
+	nav{
+		width: 50%;
+		ul{
+			display: flex;
+		    width: 90%;
+		    float: right;
+		    justify-content: space-between;
+		    text-transform: uppercase;
+		    font-family: 'Raleway';
+		    font-weight: 500;
+		    color: white;
+		}    
+	}
+}
+section.almango{
+	height: 100vh;
+	img.back-image{
+		height: 100vh;
+	}
+	h1 {
+    font-size: 50px;
+    color: transparent;
+    text-align: center;
+    padding-top: 34vh;
+    -webkit-text-stroke: 1px white;
+    	strong{
+    		-webkit-text-stroke: initial;
+    	}
+	}
+}
+section.nosotros{
+	background-color: black;
+	padding: 63px 0;
+	h2{
+		color: white;
+		text-align: center;
+	}
+	.contenedor{
+		display: flex;
+		flex-wrap: wrap;
+		.col.izq{
+			width: 50%;
+			float: left;
+			.image-efecto{
+				img.captura-ipad{
+					width: 85%;
+					z-index: 150;
+				}
+				img.screen-shot{
+					position: absolute;
+					z-index: 10;
+				}
+			}
+		}
+		.col.der{
+			float: right;
+			width: 50%;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: center;
+
+			p{
+				color: white;
+				font-size: 20px;
+				text-align: right;
+				line-height: 29px;
+			}
+		}
+	}
+}
+section.vendedor{
+	h3{
+		text-transform: uppercase;
+		text-align: center;
+		width: 100%;
+	}
+}
+section.beneficios{
+	h2{
+		text-align: center;
+	}
+	.contenedor{
+		.col.mid{
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			height: 380px;
+			align-items: center;
+			padding: 60px;
+			justify-content: space-between;
+			img{
+				width: auto;
+				height: 100%;
+			}
+			p{
+				width: 50%;
+				color: black;
+				text-align: right;
+			}
+		}
+	}
+}
+section.servicios{
+	padding: 0 50px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    position: relative;
+	.servicios-tab {
+	    width: 100%;
+	    display: grid;
+	    grid-template-columns: repeat(10, 1fr);
+	    grid-gap: 10px;
+	    position: absolute;
+	    top: -70px;
+	    .items-tab{
+	    		padding: 10px;
+	    		box-shadow: 6px 6px 6px #74706A87;
+				border: 1px solid #CFCFCF;
+				border-radius: 24px;
+				opacity: 1;
+				background: white;
+	    		img{
+	    			width: 50%;
+	    			margin: auto;
+	    		}
+	    		p{
+	    			font-size: 15px;
+				    font-family: "Heebo";
+				    font-weight: 400;
+				    line-height: 18px;
+				    text-align: center;
+				    margin-top: 15px;
+	    		}
+	    }
+	}
+	.contenedor{
+    	display: flex;
+    	flex-wrap: wrap;
+    	align-items: center;
+    	padding-top: 170px;
+    	.col.izq{
+    		width: 50%;
+    		float: left;
+    		color: white;
+    		h2{
+    			margin-bottom: 100px;
+    			text-transform: uppercase;
+    		}
+    		p{
+    			width: 70%;
+    		}
+    	}
+    	.col.der{
+    		width: 50%;
+    		img{
+    			width: 70%;
+    			float: right;
+    		}
+    	}
+	}
+	.contenedor.suscripcion{
+		h3 {
+		    color: white;
+		    text-align: center;
+		    width: 100%;
+		}
+		.tipos-suscripcion {
+		    width: 50%;
+		    margin: 0 auto;
+		    display: flex;
+		    justify-content: space-evenly;
+		    .subtipos {
+			    width: 100px;
+			    height: 100px;
+			    border-radius: 50%;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    p{
+			    	font-size: 30px;
+				    text-transform: uppercase;
+				    color: transparent;
+				    font-family: 'Heebo';
+				    -webkit-text-stroke: 1px white;
+			    }
+
+			}
+			.subtipos.gold {
+			    background: transparent radial-gradient(closest-side at 48% 53%, #EFB810 0%, #000000 100%) 0% 0% no-repeat padding-box;
+				background: transparent radial-gradient(closest-side at 48% 53%, #EFB810 0%, #000000 100%) 0% 0% no-repeat padding-box;
+				
+			}
+			.subtipos.plata {
+			    background: #8A9597;
+			}
+			.subtipos.black {
+			    background: black;
+			}
+		}
+		.laptop-img{
+			position: relative;
+			img.screenshot-moto {
+			    position: absolute;
+			    width: 70%;
+			    top: 60px;
+			    z-index: -10;
+			    left: 16%;
+			}
+		}
+
+	}
+}
+section.banner-publicidad{
+	background: black;
+	.contenedor{
+		h3{
+			-webkit-text-stroke: 1px white;
+			font-family: 'Raleway';
+			color: transparent;
+			width: 100%;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		.texto-banner {
+		    color: white;
+		    width: 40%;
+		    margin-top: 30px;
+		    p {
+			    margin: 40px 0;
+			    font-size: 20px;
+			    font-family: 'Heebo';
+			    text-align: left;
+			}
+		}
+		.tipos-suscripcion{
+			display: flex;
+			width: 50%;
+			justify-content: space-between;
+			margin: 0 auto;
+
+
+			.subtipos{
+			    width: 100px;
+			    height: 100px;
+			    background: black;
+			    border-radius: 50%;
+			    border: 1px solid white;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    cursor: pointer;
+			    &.active{
+			    	background: transparent 
+			    	radial-gradient(closest-side at 50% 50%, 
+			    								#060606 0%, 
+			    								#FFA020 100%) 0% 0% no-repeat padding-box;
+			    	border: unset;
+
+			    }
+			    p{
+			    	font-family: 'Raleway';
+			    	font-weight: 500;
+			    	color: transparent;
+			    	-webkit-text-stroke: 1px white;
+			    	font-size: 30px;
+			    	text-transform: uppercase;
+			    }
+			}
+
+		}
+		.laptop-movil{
+			display: flex;
+			width: 100%;
+			align-items: center;
+			img{
+				width: 50%;
+				height: auto;
+			}
+		}
+		
+	}
+}
+section.servicios-complementarios{
+	height: auto;
+    background: black;
+    padding-bottom: 50px;
+	h3{
+		width: 942px;
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 60px;
+	    text-transform: uppercase;
+	    color: transparent;
+	    font-family: 'Raleway';
+	    -webkit-text-stroke: 1px white;
+	    margin-bottom: 30px;
+
+	}
+	.items-servicios {
+    	width: 70%;
+	    display: grid;
+	    grid-template-columns: repeat(6, 1fr);
+	    margin: 0 auto;
+    	.subitems-servicios {
+    		.subitems-img{
+	    		width: 110px;
+			    height: 110px;
+			    background-color: white;
+			    padding: 16px;
+			    border-radius: 19px;
+			    margin: auto;
+			    &.active{
+    			background: transparent radial-gradient(closest-side at 50% 50%, #ffa020 0%, #000000 100%) 0% 0% no-repeat padding-box;
+				box-shadow: 2px 2px 1px var(--unnamed-color-000000);
+    			}
+    		}
+    		
+    		p {
+			    padding: 0 19px;
+			    color: white;
+			    text-align: center;
+			    font-family: 'Heebo';
+			    font-weight: 300;
+			    font-size: 15px;
+			    margin-top: 15px;
+			}
+		 
+		}
+	}
+	.estadistica{
+		margin-top: 60px;
+		.contenedor{
+			display: flex;
+			align-items: center;
+			.col.izq{
+				width: 40%;
+				float: left;
+				p{
+					color: white;
+					font-size: 20px;
+					font-family: 'Heebo';
+					text-align: left;
+				}
+			}
+			.col.der{
+				width: 60%;
+			}
+		}
+	}
+}
+section.tarifas{
+	background: #FFA020A1;
+	padding: 80px 0;
+	h2{
+		text-align: center;
+		padding:  30px 0;
+		text-transform: uppercase;
+	}
+	.tarifas-contenido {
+    width: 500px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    	.dedos-items {
+		    padding: 20px;
+		    border-radius: 50%;
+		    background: white;
+		    width: 100px;
+		    height: 100px;
+		    &.active{
+		    	background: transparent radial-gradient(closest-side at 50% 50%, #4B5AFC 0%, #000000 100%) 0% 0% no-repeat padding-box;
+				box-shadow: 6px 0px 30px #0000001A;
+				img{
+					filter: invert(1);
+				}
+		    }
+		}
+	}
+	.tipos-tarifas{
+		margin-top: 60px;
+	    display: flex;
+	    grid-template-columns: repeat(3,1fr);
+	    justify-content: center;
+	    align-items: center;
+
+		.subtipos {
+		    background: white;
+		    width: 20%;
+		    height: auto;
+		    padding: 24px;
+		    display: flex;
+		    align-items: center;
+		    flex-direction: column;
+			box-shadow: 0px 2px 30px #00000063;
+			border-radius: 27px;
+		    h4{
+		    	color: #4B5AFC;
+		    	font-size: 30px;
+		    	font-family: 'Heebo';
+		    	font-weight: 700;
+		    }
+		    img{
+		    	width: 75px;
+		    }
+		    .precio-tipo {
+		    	margin-top: 10px;
+		    	width: 100%;
+		    	border-radius: 29px;
+		    	background: #4B5AFC4A;
+		    	height: 50px;
+		    	display: flex;
+		    	align-items: center;
+		    	justify-content: center;
+		    	position: relative;
+		    	p{
+		    		font-size: 30px;
+		    		font-family: 'Montserrat';
+		    		font-weight: 500;
+		    	}
+			}
+			ul{
+				margin-top: 15px;
+			    padding-bottom: 15px;
+			    text-align: left;
+			    border-bottom: 1px solid #4B5AFC;
+			    width: 100%;
+				li{
+					font-size: 12px;
+					&::before {
+						content: "•";
+					    color: #FF5700;
+					    font-weight: 900;
+					    display: inline-block;
+					    width: 1em;
+					    margin-left: 0px;
+					    font-size: 20px;
+					}
+				}
+			}
+			.datos-incluidos{
+				text-align: center;
+				h5{
+					margin: 15px auto;
+				}
+				ul{
+					border: unset;
+					list-style: none;
+					li{
+						list-style: none;
+						text-align: center;
+						&::after {
+						content: "•";
+					    color: #000000;
+					    font-weight: 900;
+					    display: flex;
+					    margin-left: 0px;
+					    font-size: 20px;
+					    width: 100%;
+					    margin: 0 auto;
+					    justify-content: center;
+						}
+						&::before {
+						display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.condiciones{
+		.contenedor{
+			h6{
+				font-size: 20px;
+				font-family: 'Raleway';
+				font-weight: 800;
+				margin: 20px 0;
+			}
+			ul{
+				li{
+					font-size: 15px;
+					font-family: 'Raleway';
+					font-weight: 500;
+					&::before {
+						content: "•";
+					    color: #4B5AFC;
+					    font-weight: 900;
+					    display: inline-block;
+					    width: 1em;
+					    margin-left: 0px;
+					    font-size: 20px;
+
+					}  
+				}
+			}
+		}
+	}
+	.banner-publicitarios{
+		padding: 50px 0;
+    	height: auto;
+		h2{
+
+		}
+		.tarifas-contenido{
+			.dedos-items{	
+				width: 100px;
+				height: 100px;
+				&.active{
+					background: transparent linear-gradient(180deg, #D0D1D5 0%, #656565 100%) 0% 0% no-repeat padding-box;
+					box-shadow: 6px 0px 30px #0000001A;
+				}
+			}
+			p{
+				font-family: 'Heebo';
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+				padding-top: 20px;
+			}
+		}
+	}
+	.banner-publicitarios-tabs{
+		margin: 60px auto;
+	    display: flex;
+	    width: 70%;
+	    justify-content: space-evenly;
+		.subitems-banner {
+			width: 200px;
+		    background: #FFFFFF 0% 0% no-repeat padding-box;
+			box-shadow: 0px 2px 30px #00000063;
+			border-radius: 27px;
+			padding: 32px 10px;
+			h4{
+		    	color: #4B5AFC;
+		    	font-size: 30px;
+		    	font-family: 'Heebo';
+		    	text-align: center;
+		    	text-transform: uppercase;
+			}
+			img{
+				width: 75px;
+				margin: 0 auto;
+			}
+			p{
+				font-size: 50px;
+				font-family: 'Montserrat';
+				text-align: center;
+				position: relative;
+				width: max-content;
+				margin: 0 auto;
+
+				span{
+					font-size: 20px;
+					position: absolute;
+					top: 0;
+					left: -20px;
+				}
+			}
+		}
+	}
+	.banner-publicitarios{
+		height: 100vh;
+		.tabs-precios{
+			display: grid;
+			grid-template-columns: repeat(7,1fr);
+			grid-gap: 10px;
+			width: 90%;
+			margin: 0 auto;
+			.subtabs-precio {
+				background: #FFFFFF 0% 0% no-repeat padding-box;
+				box-shadow: 2px 2px 30px #00000061;
+				border-radius: 27px;
+				padding: 20px 5px;
+				position: relative;
+				p{
+					text-align: center;
+					font-family: 'Raleway';
+					font-weight: 500;
+				}
+				img{
+					width: 75px;
+					margin: auto;
+				}
+				.precio {
+				    display: flex;
+				    p.precio-p {
+				    	font-size: 60px;
+				    	font-family: 'Montserrat';
+					}
+					p.tipo-precio {
+					    font-size: 65px;
+					}
+					p.tipo-precio:after {
+					    content: "mes";
+					    font-size: 15px;
+					}
+				}
+				img.img-absolute {
+				    width: 20px !important;
+				    height: 20px;
+				    position: absolute;
+				    right: 10px;
+				    bottom: 10px;
+				}
+			}
+		}
+	}
+}
+footer{
+	padding: 60px 0;
+	.contenedor{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		.col.izq{
+			width: 30%;
+			float: left;
+		}
+		.col.der{
+			width: 70%;
+			padding: 0 80px;
+			text-align: center;
+			img {
+			    width: 50%;
+			    margin: 0 auto;
+			}
+		}
+		.contacto-footer {
+		    width: 100%;
+		    display: flex;
+		    justify-content: space-around;
+		}
+		.rrss-footer {
+		    display: flex;
+		    width: auto;
+		    margin: 0 auto;
+		    padding-top: 40px;
+		    img {
+			    width: 45px;
+			    margin: 10px;
+			}
+		}
+	}
+}
