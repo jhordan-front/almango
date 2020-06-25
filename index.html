@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Almango</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;800&family=Montserrat:wght@500&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -79,48 +80,119 @@
 		</div>
 	</section>
 	<section class="servicios">
-		<div class="servicios-tab">
-			<div class="items-tab">
-				<img src="img/datos@2x.png" alt="">
-				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
-			</div>
-			<div class="items-tab">
-				<img src="img/datos@2x.png" alt="">
-				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
-			</div>
-			<div class="items-tab">
-				<img src="img/datos@2x.png" alt="">
-				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
-			</div>
-			<div class="items-tab">
-				<img src="img/datos@2x.png" alt="">
-				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
-			</div>
-			<div class="items-tab">
-				<img src="img/datos@2x.png" alt="">
-				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
-			</div>
-			<div class="items-tab">
-				<img src="img/datos@2x.png" alt="">
-				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
-			</div>
-			<div class="items-tab">
-				<img src="img/datos@2x.png" alt="">
-				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
-			</div>
-			<div class="items-tab">
-				<img src="img/datos@2x.png" alt="">
-				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
-			</div>
-			<div class="items-tab">
-				<img src="img/datos@2x.png" alt="">
-				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
-			</div>
-			<div class="items-tab">
-				<img src="img/datos@2x.png" alt="">
-				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
-			</div>
+		<div class="div-swiper-one">
+
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		      	<div class="swiper-slide">
+		      		<img src="img/datos@2x.png" alt="">
+					<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+		      	</div>
+		      	<div class="swiper-slide">
+		      		<img src="img/datos@2x.png" alt="">
+					<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+		      	</div>
+		      	<div class="swiper-slide">
+		      		<img src="img/datos@2x.png" alt="">
+					<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+		      	</div>
+		      	<div class="swiper-slide">
+		      		<img src="img/datos@2x.png" alt="">
+					<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+		      	</div>
+		      	<div class="swiper-slide">
+		      		<img src="img/datos@2x.png" alt="">
+					<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+		      	</div>
+		      	<div class="swiper-slide">
+		      		<img src="img/datos@2x.png" alt="">
+					<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+		      	</div>
+		      	<div class="swiper-slide">
+		      		<img src="img/datos@2x.png" alt="">
+					<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+		      	</div>
+		      	<div class="swiper-slide">
+		      		<img src="img/datos@2x.png" alt="">
+					<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+		      	</div>
+		      	<div class="swiper-slide">
+		      		<img src="img/datos@2x.png" alt="">
+					<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+		      	</div>
+		      	<div class="swiper-slide">
+		      		<img src="img/datos@2x.png" alt="">
+					<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+		      	</div>
+		    </div>
+		    <!-- Add Pagination 
+		    <div class="swiper-pagination"></div>-->
+		    
+		    <!-- Add Arrows -->
+		    <div class="swiper-button-next"></div>
+		    <div class="swiper-button-prev"></div>
 		</div>
+			<script src="js/swiper.min.js"></script>
+		<script>
+		    var swiper = new Swiper('.swiper-container', {
+		      slidesPerView: 6,
+		      spaceBetween: 30,
+		      slidesPerGroup: 2,
+		      loop: true,
+		      loopFillGroupWithBlank: true,
+		      pagination: {
+		        el: '.swiper-pagination',
+		        clickable: true,
+		      },
+		      navigation: {
+		        nextEl: '.swiper-button-next',
+		        prevEl: '.swiper-button-prev',
+		      },
+		    });
+		</script>	
+		</div>
+		<!--<div class="servicios-tab">
+			<div class="items-tab">
+				<img src="img/datos@2x.png" alt="">
+				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+			</div>
+			<div class="items-tab">
+				<img src="img/datos@2x.png" alt="">
+				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+			</div>
+			<div class="items-tab">
+				<img src="img/datos@2x.png" alt="">
+				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+			</div>
+			<div class="items-tab">
+				<img src="img/datos@2x.png" alt="">
+				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+			</div>
+			<div class="items-tab">
+				<img src="img/datos@2x.png" alt="">
+				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+			</div>
+			<div class="items-tab">
+				<img src="img/datos@2x.png" alt="">
+				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+			</div>
+			<div class="items-tab">
+				<img src="img/datos@2x.png" alt="">
+				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+			</div>
+			<div class="items-tab">
+				<img src="img/datos@2x.png" alt="">
+				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+			</div>
+			<div class="items-tab">
+				<img src="img/datos@2x.png" alt="">
+				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+			</div>
+			<div class="items-tab">
+				<img src="img/datos@2x.png" alt="">
+				<p>Análisis y segmentación enfocada para captación de clientes potenciales.</p>
+			</div>
+		</div>-->
 		<div class="contenedor">
 			<div class="col izq">
 				<h2>nuestros servicios</h2>
@@ -501,10 +573,31 @@
 				<a href="">	<img src="img/whatsapp.png" alt=""></a>
 			</div>
 		</div>
-	</footer>
-
-
-
-	
+	</footer>	
 </body>
+<style>
+		    .swiper-container {
+	      width: 100%;
+	      height: 100%;
+	    }
+	    .swiper-slide {
+	      text-align: center;
+	      font-size: 18px;
+	      background: #fff;
+
+	      /* Center slide text vertically */
+	      display: -webkit-box;
+	      display: -ms-flexbox;
+	      display: -webkit-flex;
+	      display: flex;
+	      -webkit-box-pack: center;
+	      -ms-flex-pack: center;
+	      -webkit-justify-content: center;
+	      justify-content: center;
+	      -webkit-box-align: center;
+	      -ms-flex-align: center;
+	      -webkit-align-items: center;
+	      align-items: center;
+	    }
+</style>
 </html>

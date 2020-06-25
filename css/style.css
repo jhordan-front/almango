@@ -291,7 +291,7 @@ section.servicios {
     background-position-x: right;
     padding-bottom: 0;
 }
-section.servicios .servicios-tab {
+/*section.servicios .servicios-tab {
   width: 90%;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -319,6 +319,20 @@ section.servicios .servicios-tab .items-tab p {
   line-height: 18px;
   text-align: center;
   margin-top: 15px;
+}*/
+section.servicios .swiper-container .swiper-wrapper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 6px 6px 6px #74706A87;
+    border: 1px solid #CFCFCF;
+    border-radius: 24px;
+}
+section.servicios .swiper-container .swiper-wrapper .swiper-slide img{
+    width: 75px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 section.servicios .contenedor {
   display: flex;
@@ -1146,6 +1160,7 @@ section.almango {
     float: unset;
     margin: 0 auto;
     }
+
     section.servicios .contenedor.suscripcion .tipos-suscripcion {
     width: 100%;
     }
@@ -1253,6 +1268,12 @@ section.almango {
     section{
         max-width: 100%;
     }
+    section.servicios .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 49px;
+    }
+    section.servicios .swiper-container .swiper-wrapper .swiper-slide  p {
+    font-size: 15px;
+    }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
      html,body{
@@ -1284,4 +1305,15 @@ section.almango {
     section.servicios-complementarios .items-servicios {
     width: 100%;
     }
+    section.tarifas .banner-publicitarios .tabs-precios {
+    display: flex;
+    justify-content: space-around;
+    }
+    section.tarifas .banner-publicitarios .tabs-precios .subtabs-precio {
+    width: 135px;
+
+    }
+    section.tarifas .banner-publicitarios .tabs-precios .subtabs-precio .precio p.tipo-precio {
+    font-size: 25px;
+        }
 }
