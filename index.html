@@ -149,6 +149,38 @@
 		        prevEl: '.swiper-button-prev',
 		      },
 		    });
+		    var swiper = new Swiper('.swiper-container', {
+			  // Default parameters
+			  slidesPerView: 6,
+			  spaceBetween: 10,
+			  // Responsive breakpoints
+			  breakpoints: {
+			  	1920: {
+			      slidesPerView: 10,
+			      spaceBetween: 15
+			    },
+			  	// when window width is >= 320px
+			    1366: {
+			      slidesPerView: 6,
+			      spaceBetween: 20
+			    },
+			    // when window width is >= 320px
+			    768: {
+			      slidesPerView: 4,
+			      spaceBetween: 20
+			    },
+			    // when window width is >= 480px
+			    480: {
+			      slidesPerView: 3,
+			      spaceBetween: 30
+			    },
+			    // when window width is >= 640px
+			    360: {
+			      slidesPerView: 2,
+			      spaceBetween: 40
+			    }
+			  }
+			})
 		</script>	
 		</div>
 		<!--<div class="servicios-tab">
